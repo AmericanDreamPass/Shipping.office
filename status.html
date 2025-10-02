@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shipment Status</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 50px;
+    }
+    .container {
+      background: #fff;
+      padding: 40px;
+      max-width: 600px;
+      margin: auto;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    h2 {
+      color: #28a745;
+    }
+    .info {
+      text-align: left;
+      margin-top: 20px;
+      font-size: 18px;
+    }
+    .info p {
+      margin: 8px 0;
+    }
+    .loader {
+      border: 6px solid #f3f3f3;
+      border-top: 6px solid #28a745;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      animation: spin 1s linear infinite;
+      margin: 20px auto;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg);}
+      100% { transform: rotate(360deg);}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Your shipment is on its way</h2>
+    <div class="loader"></div>
+    <div class="info">
+      <p><strong>Sent by:</strong> José Cipriano</p>
+      <p><strong>From:</strong> iShop Express Office, Philadelphia</p>
+      <p><strong>To:</strong> Doroteo Monsalvo</p>
+      <p><strong>Destination:</strong> 3406 5 Chestnut St, Lufkin, TX 75901</p>
+    </div>
+  </div>
+</body>
+</html>
